@@ -1,0 +1,73 @@
+nav{
+    top: 0;
+    min-width: 100%;
+    
+    z-index: 1;
+    background-color: #212529;
+    .NavDiv{
+        max-width: 80%;
+        margin: 0 auto;
+        height: 70px;
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+        align-items: center;
+        
+        .NavLogo{
+            a{
+                font-size: 20px;
+                color: white;
+            }
+        }
+        .NavList{
+           ul{
+            display: flex;
+            gap: 15px;
+            font-size: 17px;
+            color: gray;
+           }
+        }
+        .Burger{
+            font-size: 25px;
+            color: gray;
+            display: none;
+        }
+    }
+}
+.burgerNav{
+    height: 0px;
+    width: 100%;
+    position: fixed;
+    background-color: #212529;
+    overflow: hidden;
+    transition: 1s;
+    ul{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 15px;
+    }
+
+}
+#burgerNavv{
+    transition: all .3s linear 0s ;
+}
+.mystyle{
+    min-height: 30vh !important;
+    transition: 1s;
+    
+}
+@media only screen and (max-width: 900px) {
+  
+    .NavList{
+      display: none;
+       }
+    .Burger{
+        display: flex !important;
+        padding: 10px 15px;
+        border: 1px solid gray;
+        border-radius: 7px;
+        
+    }
+}
